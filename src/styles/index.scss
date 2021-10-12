@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --red: rgb(255, 61, 61);
+  --yellow: rgb(255, 255, 64);
+  --green: rgb(72, 255, 72);
+  --blue: rgb(58, 58, 255);
+  --purple: rgb(117, 72, 117);
+  --anim-duration: 1s;
+  --anim-delay: calc(var(--anim-duration)/2);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(41, 42, 49);
+}
