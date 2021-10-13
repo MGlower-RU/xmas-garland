@@ -8,6 +8,7 @@ function App() {
 
   function turnOnLights() {
     document.querySelector('.garland__wrapper').classList.add('on')
+    document.documentElement.style.setProperty('--anim-duration', `${1/(lightSpeed/2)}s`)
   }
 
   function turnOffLights() {
